@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{background-color: black;
+}
+
+.Logo{
+  text-align: center;
+  justify-content: center;
+  padding: 0 50 0 50;
+  display: flex;
+}
+
+.neon{
+  font-size: 120px;
+  background-color: transparent;
+  color: #fff;
+ text-shadow: 10px 0px 50px #FF1493;
+ /* text-shadow: <横方向のずれ><縦方向のずれ><ぼかし範囲><色>; */
+
+}
+.click{
+  font-size: 40px;
+  background-color: transparent;
+  padding-top: 200px;
+  color: #fff;
+ /* text-shadow: 10px 0px 50px #ff3b3f; */
+}
+
+a{
+  text-decoration: none;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #FFF;
+  /* text-shadow: 0px 0px 50px #c0f5fe; */
+text-shadow: 0 0 1rem #138093, 0 0 6ch #a5eaf6, 0 0 1ch #77dff1, 0 0 1rem #5bdaf0;}
