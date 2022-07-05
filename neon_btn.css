@@ -1,16 +1,17 @@
 @charset "UTF-8";
 
 body{background-color: black;
+  display: flex;
 }
 
 .btn1{
   font-size: 12px;
   width: 50px;
+  height: 20px;
   padding: 10px 30px;
   background-color: transparent;
   border: 2px solid #59b1eb;
-  margin-top: 100px;
-  margin-left: 80px;
+  margin:100 20 0 80;
   display: inline-block;
   text-decoration: none;
   color: #59b1eb;
@@ -27,9 +28,9 @@ color: #59b1eb;
   position: relative;
   font-size: 12px;
   width: 50px;
+  height: 20px;
   background-color: #fff;
-  margin-top: 100px;
-  margin-left: 20px;
+  margin: 100 20 0 20;
   padding: 10px 30px;
   display: inline-block;
   box-shadow: 0 0 50px #FFACFC;
@@ -48,9 +49,9 @@ color: #59b1eb;
   position: relative;
   font-size: 12px;
   width: 50px;
+  height: 20px;
   background-color: transparent;
-  margin-top: 100px;
-  margin-left: 20px;
+  margin: 100 20 0 20;
   padding: 10px 30px;
   display: inline-block;
   color: #21cbff;
@@ -61,7 +62,7 @@ color: #59b1eb;
   content: "";
   position: absolute;
   top:0;
-  left: -100%;
+  left: -50%;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -79,9 +80,9 @@ color: #59b1eb;
   position: relative;
   font-size: 12px;
   width: 50px;
+  height: 20px;
   background-color: #000;
-  margin-top: 100px;
-  margin-left: 20px;
+  margin: 100 20 0 20;
   padding: 10px 30px;
   display: inline-block;
   color: #F148FB;
@@ -103,3 +104,59 @@ color: #59b1eb;
 .btn4:hover:before{
   top: 0;
   box-shadow: 0 0 50px #F148FB;
+}
+
+.btn5{
+  position: relative;
+  font-size: 12px;
+  width: 50px;
+  height: 20px;
+  background-color: #000;
+  margin: 100 20 0 20;
+  padding: 10px 30px;
+  display: inline-block;
+  color: #21cbff;
+  text-decoration: none;
+  -webkit-transition:all .3s ease;
+}
+.btn5:before{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #21cbff;
+  border-left: 2px solid #21cbff;
+  background-color: translate;
+  transition:all .5s ease;
+}
+.btn5:after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom:  2px solid #21cbff;
+  border-right:  2px solid #21cbff;
+  background-color: translate;
+  transition:all .5s ease;
+}
+.btn5:hover{
+  box-shadow: 0 0 50px #21cbff;
+  background-color: #fff;
+  color: #000;
+  transition-delay: 0.5s;
+}
+.btn5:hover:before{
+  /* ボタン左のかっこが伸びる */
+  width:98%;
+  height: 95%;
+
+}
+.btn5:hover:after{
+  /* ボタン右のかっこが伸びる */
+  width:98%;
+  height: 95%;
+}
